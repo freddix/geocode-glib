@@ -1,17 +1,17 @@
 Summary:	Geocode Helper library
 Name:		geocode-glib
-Version:	3.10.0
+Version:	3.12.0
 Release:	1
 License:	LGPL
 Group:		Libraries
-Source0:	http://download.gnome.org/sources/geocode-glib/3.10/%{name}-%{version}.tar.xz
-# Source0-md5:	0f20b52196bd86294d093f97397a37db
+Source0:	http://download.gnome.org/sources/geocode-glib/3.12/%{name}-%{version}.tar.xz
+# Source0-md5:	a14c9802c63c35d9ae9091053e192517
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	glib-devel >= 1:2.38.0
-BuildRequires:	gobject-introspection-devel >= 1.38.0
-BuildRequires:	json-glib-devel
+BuildRequires:	glib-devel >= 1:2.40.0
+BuildRequires:	gobject-introspection-devel >= 1.40.0
+BuildRequires:	json-glib-devel >= 1.0.0
 BuildRequires:	libsoup-devel
 BuildRequires:	pkg-config
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -62,6 +62,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
