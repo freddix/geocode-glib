@@ -1,16 +1,16 @@
 Summary:	Geocode Helper library
 Name:		geocode-glib
-Version:	3.12.0
+Version:	3.14.0
 Release:	1
 License:	LGPL
 Group:		Libraries
-Source0:	http://download.gnome.org/sources/geocode-glib/3.12/%{name}-%{version}.tar.xz
-# Source0-md5:	a14c9802c63c35d9ae9091053e192517
+Source0:	http://download.gnome.org/sources/geocode-glib/3.14/%{name}-%{version}.tar.xz
+# Source0-md5:	c8926a2e05f5c7039c8873f008ae6bfe
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	glib-devel >= 1:2.40.0
-BuildRequires:	gobject-introspection-devel >= 1.40.0
+BuildRequires:	glib-devel >= 1:2.42.0
+BuildRequires:	gobject-introspection-devel >= 1.42.0
 BuildRequires:	json-glib-devel >= 1.0.0
 BuildRequires:	libsoup-devel
 BuildRequires:	pkg-config
